@@ -131,6 +131,12 @@ function loadIdentity() {
         0, 0, 1, 0,
         0, 0, 0, 1
     ]);
+    perspectiveMatrix = new Float32Array([
+        1, 0, 0, 0,
+        0, 1, 0, 0,
+        0, 0, 1, 0,
+        0, 0, 0, 1
+    ]);
 }
 
 function setMatrixUniforms() {
@@ -145,13 +151,6 @@ function setMatrixUniforms() {
 function drawScene() {
 
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-    perspectiveMatrix = new Float32Array([
-        1, 0, 0, 0,
-        0, 1, 0, 0,
-        0, 0, 1, 0,
-        0, 0, 0, 1
-    ]);
-
     loadIdentity();
     setMatrixUniforms();
 

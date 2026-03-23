@@ -220,7 +220,6 @@ for (let i = 0; i < cubeVertices.length / 3; i++) {
     cubeColors.set([0.2, 0.6, 1.0, 1], i * 4);
 }
 
-// Индексы (6 граней × 2 треугольника)
 const cubeIndices = new Uint16Array([
     0, 1, 2, 0, 2, 3,
     4, 5, 6, 4, 6, 7,
